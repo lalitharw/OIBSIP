@@ -2,7 +2,8 @@ import random
 import string
 
 def GeneratePassword(length,chars,nums,syms):
-    characters = "" 
+    characters = ""
+
     if chars == "y":
         characters += string.ascii_letters
     if nums == 'y':
@@ -20,7 +21,6 @@ def GeneratePassword(length,chars,nums,syms):
     print(f"Your password is: {password}")
 
 
-# length = int(input("Enter the length of password: "))
 length = int(input("Enter length of password: "))
 chars = input("Do you want characters in your password?(Y/n) ").lower()
 nums = input("Do you want numbers in your password?(Y/n) ").lower()
